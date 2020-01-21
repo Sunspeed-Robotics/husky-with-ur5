@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find ar_track_alvar)/launch/realsense_indiv.launch" />
+  <node pkg="ur_pick" name="ur5_rtde" type="ur5_rtde.py" output="screen" />
+  <node pkg="ur_pick" name="ur5_pick" type="ur5_pick.py" output="screen" />
+</launch>
